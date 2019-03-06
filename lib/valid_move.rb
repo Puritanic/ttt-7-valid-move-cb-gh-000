@@ -2,7 +2,7 @@
 
 def valid_move?(board, index)
   board_size = board.size
-  
+
   if index > board_size || index < 0
     false
   elsif board[index] == " " || board[index] == "" || board[index] == nil
@@ -17,5 +17,5 @@ end
 def position_taken?(board, index)
   if !valid_move?(board, index) return true
   elsif board
-    
+
 end
