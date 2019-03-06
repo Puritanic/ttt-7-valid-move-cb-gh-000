@@ -2,11 +2,8 @@
 
 def valid_move?(board, index)
   board_size = board.size
-  if index > board_size || index < 0
-    false
-  else
-    position_taken?(board, index)
-  end
+  index > board_size || index < 0
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+
